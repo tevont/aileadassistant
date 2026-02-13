@@ -399,3 +399,24 @@ input, textarea{
   font-size: 13px;
   font-weight: 700;
 }
+/* Glow behind testimonials */
+.testimonials-premium{
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-premium::before{
+  content:"";
+  position:absolute;
+  inset:-200px -200px auto -200px;
+  height: 420px;
+  background: radial-gradient(circle at 20% 30%, rgba(108,124,255,.22), transparent 60%),
+              radial-gradient(circle at 80% 10%, rgba(0,210,255,.16), transparent 55%);
+  filter: blur(10px);
+  pointer-events:none;
+}
+
+.testimonials-premium .container{
+  position: relative;
+  z-index: 1;
+}
