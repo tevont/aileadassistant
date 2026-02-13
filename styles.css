@@ -334,3 +334,68 @@ input, textarea{
   .nav{display:none}
   .brand-name{display:none}
 }
+/* Premium Testimonials */
+
+.testimonials-premium{
+  position: relative;
+}
+
+.quote-card{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform .2s ease;
+}
+
+.quote-card:hover{
+  transform: translateY(-4px);
+}
+
+.stars{
+  color: #f5c518;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.quote-text{
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.results{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.quote-person{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  color: #0b0c10;
+  background: linear-gradient(135deg, var(--accent), #00d2ff);
+}
+
+.name{
+  font-weight: 900;
+}
+
+.role{
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
