@@ -420,3 +420,51 @@ input, textarea{
   position: relative;
   z-index: 1;
 }
+/* Trusted strip */
+.trusted-strip{
+  padding: 14px 0 26px;
+}
+
+.trusted-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.02);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.trusted-left{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+
+.trusted-left strong{
+  font-weight: 900;
+}
+
+.trusted-left span{
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.trusted-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  justify-content:flex-end;
+}
+
+.trusted-tag{
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.22);
+  color: var(--muted);
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 12px;
+}
