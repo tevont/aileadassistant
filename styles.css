@@ -559,3 +559,62 @@ input, textarea{
 @media (max-width: 900px){
   .qa-grid{grid-template-columns: 1fr;}
 }
+/* Dental-safe rules */
+.dental-safe{
+  position: relative;
+}
+
+.safe-grid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:14px;
+  margin-top: 14px;
+}
+
+.safe-card{
+  background: rgba(18,20,28,.86);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:18px;
+  padding:16px;
+}
+
+.safe-title{
+  font-weight: 900;
+  margin-bottom: 8px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.safe-title::before{
+  content:"✓";
+  width: 22px;
+  height: 22px;
+  border-radius: 8px;
+  display:grid;
+  place-items:center;
+  color:#0b0c10;
+  background: linear-gradient(135deg, var(--accent), #00d2ff);
+  font-weight: 900;
+}
+
+.safe-text{
+  margin:0;
+  color: var(--muted);
+  font-weight:800;
+  line-height:1.45;
+}
+
+.safe-note{
+  margin-top: 16px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.02);
+  border-radius: 16px;
+  padding: 14px;
+  color: var(--muted);
+  font-weight: 900;
+}
+
+@media (max-width: 900px){
+  .safe-grid{grid-template-columns: 1fr;}
+}
