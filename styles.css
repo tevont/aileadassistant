@@ -468,3 +468,56 @@ input, textarea{
   font-weight: 900;
   font-size: 12px;
 }
+/* ROI block */
+.roi-grid{
+  display:grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap:14px;
+  align-items:stretch;
+}
+
+.roi-card{
+  background: rgba(18,20,28,.86);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:18px;
+  padding:16px;
+}
+
+.roi-math{
+  margin: 14px 0 10px;
+  display:grid;
+  gap:8px;
+}
+
+.roi-line{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(0,0,0,.18);
+  color: var(--muted);
+  font-weight:800;
+}
+
+.roi-line strong{
+  color: var(--text);
+}
+
+.roi-list{
+  margin: 10px 0 14px;
+  padding-left: 18px;
+  color: var(--muted);
+  font-weight:800;
+}
+
+.roi-right h3{
+  margin-top: 0;
+}
+
+@media (max-width: 900px){
+  .roi-grid{grid-template-columns: 1fr}
+  .trusted-inner{flex-direction:column; align-items:flex-start}
+  .trusted-tags{justify-content:flex-start}
+}
